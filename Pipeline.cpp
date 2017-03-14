@@ -210,7 +210,7 @@ NAN_SETTER(Pipeline::SetDelay) {
 		gst_pipeline_set_delay(obj->pipeline, DOUBLE_TO_NANOS(value->NumberValue()));
 	}
 }
-/*
+
 NAN_GETTER(Pipeline::GetLatency) {
 	Pipeline *obj = Nan::ObjectWrap::Unwrap<Pipeline>(info.This());
 	double secs = NANOS_TO_DOUBLE(gst_pipeline_get_latency(obj->pipeline));
@@ -222,4 +222,3 @@ NAN_SETTER(Pipeline::SetLatency) {
 		gst_pipeline_set_latency(obj->pipeline, DOUBLE_TO_NANOS(value->NumberValue()));
 	}
 }
-*/
